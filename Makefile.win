@@ -1,4 +1,4 @@
-# Project: Project1
+# Project: Project2
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
@@ -9,7 +9,7 @@ LINKOBJ  = main.o
 LIBS     = -static-libgcc
 INCS     = 
 CXXINCS  = 
-BIN      = Project1.exe
+BIN      = Project2.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -23,6 +23,3 @@ clean: clean-custom
 
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
-
-main.o: main.c
-	$(CC) -c main.c -o main.o $(CFLAGS)
