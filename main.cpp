@@ -4,20 +4,28 @@
 
 int main(int argc, char** argv) {
 	
-	int num=0;
-	char c;
-	
-	printf("input a string: ");
-	
-	while ((c=getchar())!='\n')
-	
+	int answer = 50;
+	int input;
+	int cnt=0;
+
+
+	do
+	{	printf("input a number:");
+				scanf("%d",&input);
+		if(input<answer)
+		{
+			printf("low!\n");
+		}
+		 else if(input>answer)
 	{
-			if(c<='9'&& c>+'0')
-			{
-				num++;
-			 } 
+		printf("high!!\n");
+	}
+	cnt++;
 	}
 	
-	printf("%i\n", num);
+	
+	while(input!=answer);
+	printf("Congratulation, trial, %i\n",cnt);
+	
 	return 0;
 }
